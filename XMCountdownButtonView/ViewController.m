@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XMCountdownButton.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    XMCountdownButton *button = [[XMCountdownButton alloc]initWithFrame:CGRectMake(100, 100, 100, 30) title:@"发送验证码" startTime:5 tapEvent:^{
+        NSLog(@"123");
+    } callBack:^{
+        NSLog(@"456");
+    }];
+    [self.view addSubview:button];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

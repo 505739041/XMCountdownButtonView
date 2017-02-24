@@ -15,6 +15,7 @@
 		27A5D3621E5FD4A9000BD649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27A5D3601E5FD4A9000BD649 /* LaunchScreen.storyboard */; };
 		27A5D36D1E5FD4A9000BD649 /* XMCountdownButtonViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5D36C1E5FD4A9000BD649 /* XMCountdownButtonViewTests.m */; };
 		27A5D3781E5FD4A9000BD649 /* XMCountdownButtonViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5D3771E5FD4A9000BD649 /* XMCountdownButtonViewUITests.m */; };
+		27A5D3881E5FD4C9000BD649 /* XMCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A5D3871E5FD4C9000BD649 /* XMCountdownButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		27A5D3731E5FD4A9000BD649 /* XMCountdownButtonViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMCountdownButtonViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A5D3771E5FD4A9000BD649 /* XMCountdownButtonViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCountdownButtonViewUITests.m; sourceTree = "<group>"; };
 		27A5D3791E5FD4A9000BD649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27A5D3861E5FD4C9000BD649 /* XMCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCountdownButton.h; sourceTree = "<group>"; };
+		27A5D3871E5FD4C9000BD649 /* XMCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCountdownButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		27A5D3511E5FD4A9000BD649 /* XMCountdownButtonView */ = {
 			isa = PBXGroup;
 			children = (
+				27A5D3851E5FD4C9000BD649 /* CountdownButtonView */,
 				27A5D3551E5FD4A9000BD649 /* AppDelegate.h */,
 				27A5D3561E5FD4A9000BD649 /* AppDelegate.m */,
 				27A5D3581E5FD4A9000BD649 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				27A5D3791E5FD4A9000BD649 /* Info.plist */,
 			);
 			path = XMCountdownButtonViewUITests;
+			sourceTree = "<group>";
+		};
+		27A5D3851E5FD4C9000BD649 /* CountdownButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				27A5D3861E5FD4C9000BD649 /* XMCountdownButton.h */,
+				27A5D3871E5FD4C9000BD649 /* XMCountdownButton.m */,
+			);
+			path = CountdownButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					27A5D34E1E5FD4A9000BD649 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 75D4Y8EFXP;
 						ProvisioningStyle = Automatic;
 					};
 					27A5D3671E5FD4A9000BD649 = {
@@ -273,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A5D3881E5FD4C9000BD649 /* XMCountdownButton.m in Sources */,
 				27A5D35A1E5FD4A9000BD649 /* ViewController.m in Sources */,
 				27A5D3571E5FD4A9000BD649 /* AppDelegate.m in Sources */,
 				27A5D3541E5FD4A9000BD649 /* main.m in Sources */,
@@ -422,7 +437,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75D4Y8EFXP;
 				INFOPLIST_FILE = XMCountdownButtonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ximenbuchuixue.cn.XMCountdownButtonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +450,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75D4Y8EFXP;
 				INFOPLIST_FILE = XMCountdownButtonView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ximenbuchuixue.cn.XMCountdownButtonView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
